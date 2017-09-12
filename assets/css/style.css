@@ -1,0 +1,24 @@
+body{
+	text-align: center;
+}
+#animal-buttons{
+	padding:10px 10px 10px 0px;
+}
+
+button{
+	margin-left: 15px;
+    background: #91beea;
+    border: 1px solid #0b023e;
+    color: #0b023e;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+}
+
+#animal-form{
+	font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Lobster', cursive;
+}
+
+.animal-item{
+	width: fit-content;}
