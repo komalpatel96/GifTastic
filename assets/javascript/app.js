@@ -5,7 +5,7 @@ $(document).ready(function() {
     "bird", "ferret", "turtle", "salamander", "frog"
   ];
 
-// function to make buttons and add to page
+// function to make buttons and add to page, arguments 
   function newButtons (newArray, newClass, buttonArea) {
     $(buttonArea).empty();
 
@@ -24,24 +24,24 @@ $(document).ready(function() {
     $(".animal-button").removeClass("active");
     $(this).addClass("active");
 
-    var animal = $("#animal-buttons").attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +animal+ "&api_key=449506dd7b5248e8b5a05d0f08c1a639";
+    var animal = $(this).attr("data-type");
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=449506dd7b5248e8b5a05d0f08c1a639&limit=10";
 
     $.ajax({
       url: queryURL,
       method: "GET"
     }).done(function(response) {
-      var results = response.data;
+      var gifResults = response.data;
 
-      for (var i = 0; i < results.length; i++) {
-        var animalDiv = $("<div class= 'animal'>");
+      for (var i = 0; i < gifResults.length; i++) {
+        var animalDiv = $("<div class= \"animalItem\">");
 
-        var rating = results[i].rating;
+        var rating = gifResults[i].rating;
 
         var p = $("<p>").text("Rating: " + rating);
 
-        var animated = results[i].images.fixed_height.url;
-        var still = results[i].images.fixed_height_still.url;
+        var animated = gifResults[i].images.fixed_height.url;
+        var still = gifResults[i].images.fixed_height_still.url;
 
         var animalGif = $("<img>");
         animalGif.attr("src", still);
