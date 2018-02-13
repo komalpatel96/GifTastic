@@ -8,7 +8,7 @@ body{
 }
 #animal-buttons{
     text-align: center;
-	padding:10px 10px 10px 0px;
+	padding:10px 10px 20px 0px;
 }
 
 .logo1{
@@ -34,7 +34,7 @@ body{
 
 #add-animal{
     font-size: 15px;
-    width: 45%;
+    width: 20%;
     background: #31c45e;
     border: 1px solid #e5e5e5;
     color: #ffffff;
@@ -57,7 +57,7 @@ label{
 
 #animal-input{
     height: 25px;
-    width: 85%;
+    width: 70%;
 }
 
 h3{
