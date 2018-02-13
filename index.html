@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Giphy</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <!--font-family: 'Lobster', cursive;
@@ -12,26 +13,43 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="row row1">
+      <div class="col">
+        <img class="logo1 pull-left" src="assets/images/giphylogo.gif">
+      </div>
+      
+       <h2 class="h2Text pull-left">GIPHY ANIMAL SEARCH</h2>
 
-  <div id="animal-buttons">
+      
+    </div>
 
-  </div>
+    <div class="row">
+      <div class="col searchDiv">
+        <div class="search">  
+          <form id="animal-form">
+            <label for="animal-input">Add an animal: </label>
+            <input type="text" id="animal-input"><br>
 
+            <input id="add-animal" type="submit" value="Submit">
+          </form>
+        </div>
 
-  <form id="animal-form">
-    <label for="animal-input">Add an animal: </label>
-    <input type="text" id="animal-input"><br>
+        <div id="animal-buttons"> </div>
 
-    <input id="add-animal" type="submit" value="Submit">
-  </form>
+      </div>
+      <div class="col" id="scroll">
+<!--         <h3>Click on the image to play the gif</h3>
+ -->        <div id="animals"> </div>
+      </div>
+    </div>
+    
+  
+    
+  </div> <!-- /container -->
 
-
-  <div id="animals">
-
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  
 </body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </html>
