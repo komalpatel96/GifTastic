@@ -19,8 +19,8 @@ body{
 .animal-image{
     width: 251px;
     margin: 0;  
-    border-radius: 0px 0px 25px 25px;
-}
+/*    border-radius: 0px 0px 25px 25px;
+*/}
 
 #animal-form{
 	font-size: 20px;
@@ -44,8 +44,8 @@ body{
 
 p{
    background-color: #EE5921;
-    border-radius: 25px 25px 0 0;
-    padding: 8px;
+/*    border-radius: 25px 25px 0 0;
+*/    padding: 8px;
     text-align: center;
     font-family: 'Lobster', cursive;
     margin: 0;
@@ -71,13 +71,23 @@ h3{
     margin-top: 20px;
     margin-left: 20px;
     overflow: hidden;
+    grid-row-gap: 0px;
+      column-gap: 0px; 
 }
 
 #scroll{
+    text-align: center;
     float:left;
     width: 100%;
     overflow: auto;
     padding: 10px;
+/*     -webkit-column-count: 5;
+      -webkit-column-gap:   0px;
+      -moz-column-count:    5;
+      -moz-column-gap:      0px;
+      column-count:         5;*/
+      grid-row-gap: 0px;
+      column-gap:           0px; 
 }
 
 .row1{
